@@ -1,16 +1,6 @@
-<h2>Celebrities</h2>
-<form action="/celebrities/create" method="POST">
+<h1>Celebrities</h1>
 
-    <label  for="title">Name</label>
-   
-    <input  type="text" name="name">
-    <label  for="occupation">Occupation</label>
-    
-    <input  type="text" name="occupation">
-    <label  for="catchphrase">Catch Phrase</label>
-   
-    <input  type="text" name="catchphrase">
-   
-    <button  type="submit">SUBMIT</button>
-
-</form>
+{{#each allCelebs}}
+<p>Name : {{this.name}}
+</p>
+{{/each}}
